@@ -13,18 +13,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var card: UIView!
     @IBOutlet weak var thumbImg: UIImageView!
     
+    var dividsor: CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        dividsor = (view.frame.width / 2) / 0.51
     }
 
+ 
     @IBAction func panCard(_ sender: UIPanGestureRecognizer) {
         let card = sender.view!
         let point = sender.translation(in: view)
         let xFromCenter = card.center.x - view.center.x
+        let scale = min(100 / abs(xFromCenter), 1)
         
         card.center = CGPoint(x: view.center.x + point.x, y: view.center.y + point.y)
+        card.transform = CGAffineTransform(rotationAngle: xFromCenter / dividsor).scaledBy(x: scale, y: scale)
         
         if xFromCenter > 0 {
             thumbImg.image = #imageLiteral(resourceName: "thumbsup")
@@ -37,10 +42,38 @@ class ViewController: UIViewController {
         thumbImg.alpha = abs(xFromCenter) / view.center.x
         
         if sender.state == UIGestureRecognizer.State.ended {
-            UIView.animate(withDuration: 0.2) {
-                card.center = self.view.center
-                self.thumbImg.alpha = 0
+            
+            if card.center.x < 75 {
+                //Move card off the left of the screen
+                UIView.animate(withDuration: 0.3) {
+                    card.center = CGPoint(x: card.center.x - 250, y: card.center.y + 75)
+                    card.alpha = 0
+                    
+                }
+                return
+            } else if card.center.x > (view.frame.width - 75) {
+                //move card off the right of the screen
+                UIView.animate(withDuration: 0.3) {
+                    card.center = CGPoint(x: card.center.x + 250, y: card.center.y + 75)
+                    card.alpha = 0
+                }
+                return
             }
+            reset()
+          
+        }
+    }
+    
+    @IBAction func resetBtn(_ sender: Any) {
+        reset()
+    }
+    
+    func reset() {
+        UIView.animate(withDuration: 0.2) {
+            self.card.center = self.view.center
+            self.thumbImg.alpha = 0
+            self.card.alpha = 1
+            self.card.transform = .identity
         }
     }
     
