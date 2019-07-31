@@ -1,24 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i5u-kC-aXB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="F2h-fo-Tyr">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <navigationController id="i5u-kC-aXB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QcC-zK-fZr">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="25"/>
+                            <color key="textColor" red="0.88235294119999996" green="0.69411764710000001" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.88235294117647056" green="0.69411764705882351" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MCi-yI-TuR" kind="relationship" relationship="rootViewController" id="PVF-bV-WLJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n0Y-ga-EzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-293" y="131"/>
+        </scene>
+        <!--VYBE-->
+        <scene sceneID="rew-zq-jjr">
+            <objects>
+                <viewController id="MCi-yI-TuR" customClass="ViewController" customModule="Vybe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ji-JH-A87">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vjm-du-vgL" userLabel="card">
+                                <rect key="frame" x="42" y="137" width="290" height="337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A Very Long Song Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVq-pG-8Nh">
+                                        <rect key="frame" x="25" y="265" width="240" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="UGO-jk-UoD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                        <color key="textColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1975" translatesAutoresizingMaskIntoConstraints="NO" id="Nsv-cH-rID">
+                                        <rect key="frame" x="8" y="25" width="274" height="232"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumbsup" translatesAutoresizingMaskIntoConstraints="NO" id="5PT-cZ-Ob7">
+                                        <rect key="frame" x="81" y="104" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.69411764710000001" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="fVq-pG-8Nh" firstAttribute="leading" secondItem="vjm-du-vgL" secondAttribute="leading" constant="25" id="27c-9u-HhR"/>
+                                    <constraint firstItem="Nsv-cH-rID" firstAttribute="top" secondItem="vjm-du-vgL" secondAttribute="topMargin" constant="17" id="3Mr-I3-lZI"/>
+                                    <constraint firstItem="Nsv-cH-rID" firstAttribute="leading" secondItem="vjm-du-vgL" secondAttribute="leadingMargin" id="3rm-Xa-wCs"/>
+                                    <constraint firstItem="fVq-pG-8Nh" firstAttribute="top" secondItem="Nsv-cH-rID" secondAttribute="bottom" constant="8" id="8rL-12-UM0"/>
+                                    <constraint firstItem="Nsv-cH-rID" firstAttribute="trailing" secondItem="vjm-du-vgL" secondAttribute="trailingMargin" id="Soc-Wr-737"/>
+                                    <constraint firstAttribute="bottom" secondItem="fVq-pG-8Nh" secondAttribute="bottom" constant="38" id="qsc-mL-4fi"/>
+                                    <constraint firstItem="Nsv-cH-rID" firstAttribute="centerX" secondItem="fVq-pG-8Nh" secondAttribute="centerX" id="sqo-DR-IhD"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="wPw-XE-RRe" appends="YES" id="V4f-dz-euf"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vjm-du-vgL" firstAttribute="leading" secondItem="eEP-SE-Pow" secondAttribute="leading" constant="42" id="0JT-i2-v3D"/>
+                            <constraint firstItem="vjm-du-vgL" firstAttribute="top" secondItem="eEP-SE-Pow" secondAttribute="top" constant="73" id="MY8-o6-dVb"/>
+                            <constraint firstItem="vjm-du-vgL" firstAttribute="centerX" secondItem="0ji-JH-A87" secondAttribute="centerX" id="aD3-PY-R9t"/>
+                            <constraint firstItem="eEP-SE-Pow" firstAttribute="bottom" secondItem="vjm-du-vgL" secondAttribute="bottom" constant="193" id="fBA-4b-IUC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eEP-SE-Pow"/>
                     </view>
+                    <navigationItem key="navigationItem" title="VYBE" id="TFG-Iu-BJd"/>
+                    <connections>
+                        <outlet property="card" destination="vjm-du-vgL" id="vRc-ol-uMg"/>
+                        <outlet property="thumbImg" destination="5PT-cZ-Ob7" id="v8A-fi-6HB"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHX-cG-Sgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="wPw-XE-RRe">
+                    <connections>
+                        <action selector="panCard:" destination="MCi-yI-TuR" id="SAz-qZ-mIj"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="504.80000000000001" y="130.88455772113943"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1975" width="112.5" height="112.5"/>
+        <image name="thumbsup" width="112.5" height="112.5"/>
+    </resources>
 </document>
