@@ -3,18 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0219299D22F338B800BE504C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0219299C22F338B800BE504C /* LoginController.swift */; };
+		021929A122F339FB00BE504C /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0219299E22F339FA00BE504C /* SpotifyAudioPlayback.framework */; };
+		021929A222F339FB00BE504C /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0219299F22F339FB00BE504C /* SpotifyAuthentication.framework */; };
+		021929A322F339FB00BE504C /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021929A022F339FB00BE504C /* SpotifyMetadata.framework */; };
 		02F209F422F1C17300A71DCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F209F322F1C17300A71DCF /* AppDelegate.swift */; };
 		02F209F622F1C17300A71DCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F209F522F1C17300A71DCF /* ViewController.swift */; };
 		02F209F922F1C17300A71DCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F209F722F1C17300A71DCF /* Main.storyboard */; };
 		02F209FB22F1C17500A71DCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F209FA22F1C17500A71DCF /* Assets.xcassets */; };
 		02F209FE22F1C17500A71DCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F209FC22F1C17500A71DCF /* LaunchScreen.storyboard */; };
+		02F20A0C22F23F2500A71DCF /* playLoader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 02F20A0B22F23F2500A71DCF /* playLoader.gif */; };
+		6E9FD8A594ABDA41B018142B /* Pods_Vybe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F8CA7144603F2B6249713D /* Pods_Vybe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0219299C22F338B800BE504C /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		0219299E22F339FA00BE504C /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		0219299F22F339FB00BE504C /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		021929A022F339FB00BE504C /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		021929A422F33B3600BE504C /* Vybe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vybe.h; sourceTree = "<group>"; };
 		02F209F022F1C17300A71DCF /* Vybe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vybe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F209F322F1C17300A71DCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02F209F522F1C17300A71DCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +33,10 @@
 		02F209FA22F1C17500A71DCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02F209FD22F1C17500A71DCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02F209FF22F1C17500A71DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02F20A0B22F23F2500A71DCF /* playLoader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = playLoader.gif; sourceTree = "<group>"; };
+		3916F5F6CB27DBA7285CF850 /* Pods-Vybe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vybe.debug.xcconfig"; path = "Target Support Files/Pods-Vybe/Pods-Vybe.debug.xcconfig"; sourceTree = "<group>"; };
+		AE50E4865E7D67D2F8C53066 /* Pods-Vybe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vybe.release.xcconfig"; path = "Target Support Files/Pods-Vybe/Pods-Vybe.release.xcconfig"; sourceTree = "<group>"; };
+		B8F8CA7144603F2B6249713D /* Pods_Vybe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vybe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +44,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				021929A322F339FB00BE504C /* SpotifyMetadata.framework in Frameworks */,
+				6E9FD8A594ABDA41B018142B /* Pods_Vybe.framework in Frameworks */,
+				021929A222F339FB00BE504C /* SpotifyAuthentication.framework in Frameworks */,
+				021929A122F339FB00BE504C /* SpotifyAudioPlayback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +59,8 @@
 			children = (
 				02F209F222F1C17300A71DCF /* Vybe */,
 				02F209F122F1C17300A71DCF /* Products */,
+				291C87CD44AADC2BEF6C7FCD /* Pods */,
+				2C2A3CDDDD4BCDBDB25DB5D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +75,37 @@
 		02F209F222F1C17300A71DCF /* Vybe */ = {
 			isa = PBXGroup;
 			children = (
+				02F20A0B22F23F2500A71DCF /* playLoader.gif */,
 				02F209F322F1C17300A71DCF /* AppDelegate.swift */,
+				0219299C22F338B800BE504C /* LoginController.swift */,
+				0219299E22F339FA00BE504C /* SpotifyAudioPlayback.framework */,
+				0219299F22F339FB00BE504C /* SpotifyAuthentication.framework */,
+				021929A022F339FB00BE504C /* SpotifyMetadata.framework */,
 				02F209F522F1C17300A71DCF /* ViewController.swift */,
 				02F209F722F1C17300A71DCF /* Main.storyboard */,
+				021929A422F33B3600BE504C /* Vybe.h */,
 				02F209FA22F1C17500A71DCF /* Assets.xcassets */,
 				02F209FC22F1C17500A71DCF /* LaunchScreen.storyboard */,
 				02F209FF22F1C17500A71DCF /* Info.plist */,
 			);
 			path = Vybe;
+			sourceTree = "<group>";
+		};
+		291C87CD44AADC2BEF6C7FCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3916F5F6CB27DBA7285CF850 /* Pods-Vybe.debug.xcconfig */,
+				AE50E4865E7D67D2F8C53066 /* Pods-Vybe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2C2A3CDDDD4BCDBDB25DB5D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8F8CA7144603F2B6249713D /* Pods_Vybe.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02F20A0222F1C17500A71DCF /* Build configuration list for PBXNativeTarget "Vybe" */;
 			buildPhases = (
+				DDC37F51CA8FB354BDAD2F6D /* [CP] Check Pods Manifest.lock */,
 				02F209EC22F1C17300A71DCF /* Sources */,
 				02F209ED22F1C17300A71DCF /* Frameworks */,
 				02F209EE22F1C17300A71DCF /* Resources */,
+				041D89E87D01048CA28FF8B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,11 +170,54 @@
 			files = (
 				02F209FE22F1C17500A71DCF /* LaunchScreen.storyboard in Resources */,
 				02F209FB22F1C17500A71DCF /* Assets.xcassets in Resources */,
+				02F20A0C22F23F2500A71DCF /* playLoader.gif in Resources */,
 				02F209F922F1C17300A71DCF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		041D89E87D01048CA28FF8B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vybe/Pods-Vybe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vybe/Pods-Vybe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vybe/Pods-Vybe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDC37F51CA8FB354BDAD2F6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vybe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		02F209EC22F1C17300A71DCF /* Sources */ = {
@@ -136,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02F209F622F1C17300A71DCF /* ViewController.swift in Sources */,
+				0219299D22F338B800BE504C /* LoginController.swift in Sources */,
 				02F209F422F1C17300A71DCF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +309,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/macbook/Desktop/Vybe/Vybe/Vybe.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 			};
 			name = Debug;
 		};
@@ -273,24 +365,34 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/macbook/Desktop/Vybe/Vybe/Vybe.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		02F20A0322F1C17500A71DCF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3916F5F6CB27DBA7285CF850 /* Pods-Vybe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RCUW4C85W9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vybe",
+				);
 				INFOPLIST_FILE = Vybe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.uk.trbg.Vybe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/macbook/Desktop/Vybe/Vybe/Vybe.h;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,17 +400,25 @@
 		};
 		02F20A0422F1C17500A71DCF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE50E4865E7D67D2F8C53066 /* Pods-Vybe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RCUW4C85W9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vybe",
+				);
 				INFOPLIST_FILE = Vybe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.uk.trbg.Vybe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/macbook/Desktop/Vybe/Vybe/Vybe.h;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
