@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="biG-uy-ObJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2GR-Pr-85N">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,19 +18,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQl-eh-dnz">
-                                <rect key="frame" x="113" y="318" width="157" height="30"/>
+                                <rect key="frame" x="109" y="575" width="157" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login With Spotify"/>
+                                <color key="backgroundColor" red="0.11372549019607843" green="0.72549019607843135" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Login With Spotify">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="LoginButtonAction:" destination="biG-uy-ObJ" eventType="touchUpInside" id="btO-Ew-oCu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VYBE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Z9-I4-E6s">
+                                <rect key="frame" x="116" y="293" width="140" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="67"/>
+                                <color key="textColor" red="0.88235294119999996" green="0.69411764710000001" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aL0-s9-RWC"/>
                     </view>
                     <connections>
                         <outlet property="logInBtn" destination="cQl-eh-dnz" id="Hse-zx-se4"/>
+                        <segue destination="i5u-kC-aXB" kind="show" identifier="loginSegue" id="wIZ-gn-UHv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gCW-q9-vp4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -70,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.80000000000000004" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vjm-du-vgL" userLabel="card">
-                                <rect key="frame" x="42" y="137" width="290" height="337"/>
+                                <rect key="frame" x="42" y="165" width="290" height="337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A Very Long Song Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVq-pG-8Nh">
                                         <rect key="frame" x="25" y="265" width="240" height="34"/>
@@ -112,13 +122,21 @@
                                     <action selector="resetBtn:" destination="MCi-yI-TuR" eventType="touchUpInside" id="Agf-TY-QQD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="487-8k-ktk">
+                                <rect key="frame" x="313" y="617" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="2GR-Pr-85N" kind="show" id="VKM-kg-Gez"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vjm-du-vgL" firstAttribute="leading" secondItem="eEP-SE-Pow" secondAttribute="leading" constant="42" id="0JT-i2-v3D"/>
-                            <constraint firstItem="vjm-du-vgL" firstAttribute="top" secondItem="eEP-SE-Pow" secondAttribute="top" constant="73" id="MY8-o6-dVb"/>
+                            <constraint firstItem="vjm-du-vgL" firstAttribute="top" secondItem="eEP-SE-Pow" secondAttribute="top" constant="101" id="MY8-o6-dVb"/>
                             <constraint firstItem="vjm-du-vgL" firstAttribute="centerX" secondItem="0ji-JH-A87" secondAttribute="centerX" id="aD3-PY-R9t"/>
-                            <constraint firstItem="eEP-SE-Pow" firstAttribute="bottom" secondItem="vjm-du-vgL" secondAttribute="bottom" constant="193" id="fBA-4b-IUC"/>
+                            <constraint firstItem="eEP-SE-Pow" firstAttribute="bottom" secondItem="vjm-du-vgL" secondAttribute="bottom" constant="165" id="fBA-4b-IUC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eEP-SE-Pow"/>
                     </view>
@@ -136,6 +154,34 @@
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="504.80000000000001" y="130.88455772113943"/>
+        </scene>
+        <!--Search Table View Controller-->
+        <scene sceneID="1Oh-Bo-tUJ">
+            <objects>
+                <tableViewController id="2GR-Pr-85N" customClass="SearchTableViewController" customModule="Vybe" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6jf-kf-gut">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="l36-aw-xba">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l36-aw-xba" id="CMa-CR-maC">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2GR-Pr-85N" id="ebg-g0-fDa"/>
+                            <outlet property="delegate" destination="2GR-Pr-85N" id="URp-tk-QKV"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SOX-dI-oBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="131"/>
         </scene>
     </scenes>
     <resources>

@@ -8,5 +8,6 @@ target 'Vybe' do
   # Pods for Vybe
     pod 'lottie-ios'
     pod 'SwiftyGif'
+    pod 'Alamofire', '~> 5.0.0-beta.5'
 
 end

@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SPTAudioStreamingPlaybackDelegate, SPTAudioStreamingDelegate  {
 
     @IBOutlet weak var card: UIView!
     @IBOutlet weak var thumbImg: UIImageView!
     
     var dividsor: CGFloat!
+    let songController = LoginController()
+    var player: SPTAudioStreamingController?
+    var session: SPTSession!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +52,6 @@ class ViewController: UIViewController {
                 UIView.animate(withDuration: 0.3) {
                     card.center = CGPoint(x: card.center.x - 250, y: card.center.y + 75)
                     card.alpha = 0
-                    
                 }
                 return
             } else if card.center.x > (view.frame.width - 75) {
@@ -60,12 +63,14 @@ class ViewController: UIViewController {
                 return
             }
             reset()
-          
         }
     }
     
+    
     @IBAction func resetBtn(_ sender: Any) {
         reset()
+        
+      
     }
     
     func reset() {

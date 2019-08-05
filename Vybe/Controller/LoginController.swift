@@ -16,6 +16,7 @@ class LoginController: UIViewController, SPTAudioStreamingPlaybackDelegate, SPTA
     var session: SPTSession!
     var player: SPTAudioStreamingController?
     var loginURL: URL?
+    var trackUri = "spotify:track:4rmIfFUZhhi9sS5IYtpkXw"
 
     @IBOutlet weak var logInBtn: UIButton!
     override func viewDidLoad() {
@@ -57,18 +58,16 @@ class LoginController: UIViewController, SPTAudioStreamingPlaybackDelegate, SPTA
             initialisePlayer(authSession: session)
             
         }
-        
+        performSegue(withIdentifier: "loginSegue", sender: self)
     }
     
     func audioStreamingDidLogin(_ audioStreaming: SPTAudioStreamingController!) {
-        print("Logged in")
-//        self.player?.playSpotifyURI("spotify:track:7dvM0LbJ4pu1tDJnCH1Ahg", startingWith: 0, startingWithPosition: 0, callback: { (error) in
-//            if (error != nil) {
-//                print("playing")
-//            }
-//        })
+        self.player?.playSpotifyURI(trackUri, startingWith: 0, startingWithPosition: 0, callback: { (error) in
+            if (error != nil) {
+                print("playing")
+            }
+        })
     }
-    
     
 
     @IBAction func LoginButtonAction(_ sender: Any) {

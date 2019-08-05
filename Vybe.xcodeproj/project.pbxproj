@@ -11,12 +11,13 @@
 		021929A122F339FB00BE504C /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0219299E22F339FA00BE504C /* SpotifyAudioPlayback.framework */; };
 		021929A222F339FB00BE504C /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0219299F22F339FB00BE504C /* SpotifyAuthentication.framework */; };
 		021929A322F339FB00BE504C /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021929A022F339FB00BE504C /* SpotifyMetadata.framework */; };
+		02293D4722F87E0D00526ACA /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02293D4622F87E0D00526ACA /* SearchTableViewController.swift */; };
+		02293D4A22F8981700526ACA /* parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02293D4922F8981700526ACA /* parameters.swift */; };
 		02F209F422F1C17300A71DCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F209F322F1C17300A71DCF /* AppDelegate.swift */; };
 		02F209F622F1C17300A71DCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F209F522F1C17300A71DCF /* ViewController.swift */; };
 		02F209F922F1C17300A71DCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F209F722F1C17300A71DCF /* Main.storyboard */; };
 		02F209FB22F1C17500A71DCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F209FA22F1C17500A71DCF /* Assets.xcassets */; };
 		02F209FE22F1C17500A71DCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F209FC22F1C17500A71DCF /* LaunchScreen.storyboard */; };
-		02F20A0C22F23F2500A71DCF /* playLoader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 02F20A0B22F23F2500A71DCF /* playLoader.gif */; };
 		6E9FD8A594ABDA41B018142B /* Pods_Vybe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F8CA7144603F2B6249713D /* Pods_Vybe.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,8 @@
 		0219299F22F339FB00BE504C /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
 		021929A022F339FB00BE504C /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
 		021929A422F33B3600BE504C /* Vybe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vybe.h; sourceTree = "<group>"; };
+		02293D4622F87E0D00526ACA /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		02293D4922F8981700526ACA /* parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parameters.swift; sourceTree = "<group>"; };
 		02F209F022F1C17300A71DCF /* Vybe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vybe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F209F322F1C17300A71DCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02F209F522F1C17300A71DCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,7 +36,6 @@
 		02F209FA22F1C17500A71DCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02F209FD22F1C17500A71DCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02F209FF22F1C17500A71DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02F20A0B22F23F2500A71DCF /* playLoader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = playLoader.gif; sourceTree = "<group>"; };
 		3916F5F6CB27DBA7285CF850 /* Pods-Vybe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vybe.debug.xcconfig"; path = "Target Support Files/Pods-Vybe/Pods-Vybe.debug.xcconfig"; sourceTree = "<group>"; };
 		AE50E4865E7D67D2F8C53066 /* Pods-Vybe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vybe.release.xcconfig"; path = "Target Support Files/Pods-Vybe/Pods-Vybe.release.xcconfig"; sourceTree = "<group>"; };
 		B8F8CA7144603F2B6249713D /* Pods_Vybe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vybe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +56,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02293D4422F87DBC00526ACA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0219299C22F338B800BE504C /* LoginController.swift */,
+				02F209F522F1C17300A71DCF /* ViewController.swift */,
+				02293D4622F87E0D00526ACA /* SearchTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		02293D4522F87DCB00526ACA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02F209FF22F1C17500A71DCF /* Info.plist */,
+				021929A422F33B3600BE504C /* Vybe.h */,
+				0219299E22F339FA00BE504C /* SpotifyAudioPlayback.framework */,
+				0219299F22F339FB00BE504C /* SpotifyAuthentication.framework */,
+				021929A022F339FB00BE504C /* SpotifyMetadata.framework */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02293D4822F897FD00526ACA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02293D4922F8981700526ACA /* parameters.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		02F209E722F1C17300A71DCF = {
 			isa = PBXGroup;
 			children = (
@@ -75,18 +107,13 @@
 		02F209F222F1C17300A71DCF /* Vybe */ = {
 			isa = PBXGroup;
 			children = (
-				02F20A0B22F23F2500A71DCF /* playLoader.gif */,
 				02F209F322F1C17300A71DCF /* AppDelegate.swift */,
-				0219299C22F338B800BE504C /* LoginController.swift */,
-				0219299E22F339FA00BE504C /* SpotifyAudioPlayback.framework */,
-				0219299F22F339FB00BE504C /* SpotifyAuthentication.framework */,
-				021929A022F339FB00BE504C /* SpotifyMetadata.framework */,
-				02F209F522F1C17300A71DCF /* ViewController.swift */,
+				02293D4822F897FD00526ACA /* Model */,
+				02293D4422F87DBC00526ACA /* Controller */,
 				02F209F722F1C17300A71DCF /* Main.storyboard */,
-				021929A422F33B3600BE504C /* Vybe.h */,
 				02F209FA22F1C17500A71DCF /* Assets.xcassets */,
 				02F209FC22F1C17500A71DCF /* LaunchScreen.storyboard */,
-				02F209FF22F1C17500A71DCF /* Info.plist */,
+				02293D4522F87DCB00526ACA /* Supporting Files */,
 			);
 			path = Vybe;
 			sourceTree = "<group>";
@@ -170,7 +197,6 @@
 			files = (
 				02F209FE22F1C17500A71DCF /* LaunchScreen.storyboard in Resources */,
 				02F209FB22F1C17500A71DCF /* Assets.xcassets in Resources */,
-				02F20A0C22F23F2500A71DCF /* playLoader.gif in Resources */,
 				02F209F922F1C17300A71DCF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,9 +250,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02293D4A22F8981700526ACA /* parameters.swift in Sources */,
 				02F209F622F1C17300A71DCF /* ViewController.swift in Sources */,
 				0219299D22F338B800BE504C /* LoginController.swift in Sources */,
 				02F209F422F1C17300A71DCF /* AppDelegate.swift in Sources */,
+				02293D4722F87E0D00526ACA /* SearchTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
